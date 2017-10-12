@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x, y, sum;
+    cout << "Kiek kainuoja menesinis bilietas?: "; cin >> x;
+    cout << "Kiek kainuoja vienas  bilietas pirmyn atgal Vilnius-Kaunas?: "; cin >> y;
+    sum=y*30;
+    if (x<sum)
+        cout << "Pigiau perkant menesini bilieta (" << x << "eur)" << endl;
+    else if (sum<x)
+        cout << "Pigiau perkant po viena bilieta pirmyn atgal (" << sum << "eur)" << endl;
+
+
+    return 0;
+}
