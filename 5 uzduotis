@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x, y, sum;
+    cout << "Kiek kainuoja leidinio prenumeratas?: "; cin >> x;
+    cout << "Kiek kainuoja vienas leidinys?: "; cin >> y;
+    sum=y*30;
+    if (x<sum)
+        cout << "Prenumeruoti yra pigiau (" << x << "eur)" << endl;
+    else if (sum<x)
+        cout << "Pirkti kiekviena leidini yra pigiau (" << sum << "eur)" << endl;
+
+    return 0;
+}
