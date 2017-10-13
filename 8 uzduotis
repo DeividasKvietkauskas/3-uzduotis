@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x, y, z, sumx, sumy, sumz, b=7.24;
+
+    cout << "Kokia Krekzdute kilogramo kaina?:" ; cin >> x;
+    cout << "Kokia Ananasiniai kilogramo kaina?:" ; cin >> y;
+    cout << "Kokia Meska siaureje kilogramo kaina?:" ; cin >> z;
+    sumx=x*2;
+    sumy=y*2;
+    sumz=z*2;
+
+    if (sumx < b && sumy < b && sumz < b)
+        cout << "Bus nupirkta 3 rusiu saldainiai" << endl;
+        else if (sumx < b && sumy < b)
+            cout << "Bus nupirkta 2 rusiu saldainiai" << endl;
+        else if (sumx < b && sumz < b)
+            cout << "Bus nupirkta 2 rusiu saldainiai" << endl;
+        else if (sumy < b && sumz < b)
+            cout << "Bus nupirkta 2 rusiu saldainiai" << endl;
+        else if (sumy < b)
+            cout << "Bus nupirkta 1 rusies saldainiai" << endl;
+          else if (sumx < b)
+            cout << "Bus nupirkta 1 rusies saldainiai" << endl;
+           else if (sumz < b)
+            cout << "Bus nupirkta 1 rusies saldainiai" << endl;
+           else if (sumx > b && sumy > b && sumz > b)
+            cout << "Bus nupirkta 0 rusiu saldainiu" << endl;
+
+
+    return 0;
+}
